@@ -31,4 +31,5 @@ func main() {
 ```
 
 ## Issues
+- If you don't get a users data that means they haven't set their profile to `public` in hoyolab. You can make it public by going to hoyolab settings.
 - Currently only works with the `os` servers so the `cn` servers won't work. Will be added in a later release maybe?
