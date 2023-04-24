@@ -7,7 +7,7 @@ A wrapper to fetch your genshin user data!
 - HoyoLab Cookies - You can get you hoyolab cookies by visiting [hoyolab](https://www.hoyolab.com/) and logging in. After you login `Ctrl + Shift + I` then click on the `Console` Tab and then type `document.cookie` and thats the cookie!
 
 ## Quick Start
-Import the `genshingo package first.
+Import the `genshingo` package first.
 ```go
 package main
 
