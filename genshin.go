@@ -7,19 +7,19 @@ type Init struct {
   Server string `default:"cn"`
 }
 
-func (init Init) GetUserData(uid string) (string, error) {
+func (init Init) GetUserData(uid string) (User, error) {
 	if init.Server != "os" && init.Server != "cn" {
-		return "", errors.New("not a valid server. valid options are `os` and `cn`")
+		return User{}, errors.New("not a valid server. valid options are `os` and `cn`")
 	}
 
 	locale, err := getServerLocale(uid)
 	if err != nil {
-		return "", err
+		return User{}, err
 	}
 
 	ds, err := getDS(init.Server)
 	if err != nil {
-		return "", err
+		return User{}, err
 	}
 
 	headers := getHeaders(init.Server, ds, init.Cookie)
@@ -28,7 +28,7 @@ func (init Init) GetUserData(uid string) (string, error) {
 
 	req, err := makeOSRequest(uid, endpoint,locale, ds, headers)
 	if err != nil {
-		return "", err
+		return User{}, err
 	}
 
 	return req, nil
