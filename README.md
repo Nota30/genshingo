@@ -1,6 +1,7 @@
 # Genshingo
 
-A wrapper to fetch your genshin user data!
+An API wrapper to fetch your genshin user data!
+- You can also fetch all your characters data (name, level, constellation, etc)
 
 ## Prerequisites
 - [Go](https://go.dev/)
