@@ -8,7 +8,7 @@ An API wrapper to fetch your genshin user data!
 - HoyoLab Cookies - You can get you hoyolab cookies by visiting [hoyolab](https://www.hoyolab.com/) and logging in. After you login `Ctrl + Shift + I` then click on the `Console` Tab and then type `document.cookie` and thats the cookie!
 
 ## Install
-You can run the test file to run this in the command file. You can compile it and run it your self `test/test.go` or install one of the [releases](https://github.com/Nota30/genshingo/releases). **Note:** You need to go install before you run.
+You can run the test file to run this in the command line. You can compile it and run it your self `test/test.go` or install one of the [releases](https://github.com/Nota30/genshingo/releases). **Note:** You need to go install before you run.
 
 **The default test file looks like this:**
 ![image](https://user-images.githubusercontent.com/60175653/234162511-998ccaa0-187f-46ba-bfa2-1683814f2a87.png)
