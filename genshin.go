@@ -4,7 +4,7 @@ import "errors"
 
 type Init struct {
   Cookie string
-  Server string `default:"cn"`
+  Server string `default:"os"`
 }
 
 func (init Init) GetUserData(uid string) (User, error) {
